@@ -24,7 +24,7 @@ Number and name of feature: Feature 2 - Sorting
 
 Estimate of time needed to complete: 1.5hr
 
-Start time: _____
+Start time: 12pm
 
 Finish time: _____
 
