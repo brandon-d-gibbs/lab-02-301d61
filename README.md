@@ -26,16 +26,16 @@ Estimate of time needed to complete: 1.5hr
 
 Start time: 12pm
 
-Finish time: _____
+Finish time: 1pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1hr
 
 -----------------------------
-Number and name of feature: ________________________________
+Number and name of feature: Feature 3 - styling
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 35
 
-Start time: _____
+Start time: 1:15 pm
 
 Finish time: _____
 

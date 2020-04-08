@@ -65,3 +65,9 @@ function filterByKeyword(event) {
 }
 
 $('select').change(filterByKeyword);
+
+
+// Create @ Master
+// chckout a branch... newBranch
+// ACP to newBranch on GitHub... merge to master
+// Master > working branches
