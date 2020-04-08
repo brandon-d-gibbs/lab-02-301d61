@@ -20,9 +20,9 @@ Finish time: 11:05
 Actual time needed to complete: 1hr 5 mins.
 
 ----------------------------
-Number and name of feature: ________________________________
+Number and name of feature: Feature 2 - Sorting
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1.5hr
 
 Start time: _____
 
