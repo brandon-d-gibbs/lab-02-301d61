@@ -1,10 +1,14 @@
 'use strict';
 
-const monstersArray = [];
-const keywordArray= [];
+let monstersArray = [];
+let keywordArray= [];
 
 //Ajax, stop cleaning washing the dishes and fetch me those monsters!
-$.ajax('data/page-1.json', {method: 'GET', dataType: 'JSON'})
+function queryPage(){
+    keywordArray = [];
+    monstersArray = [];
+
+    $.ajax(`./data/${pageNumber}.json`, {method: 'GET', dataType: 'JSON'})
     .then ( (data) => {
         data.forEach( (value) => {
             new Monster(value).render();            
@@ -14,6 +18,9 @@ $.ajax('data/page-1.json', {method: 'GET', dataType: 'JSON'})
         });
     populateDropDown();    
 });
+}
+
+
 
 //Constructor Function for our Monsters
 function Monster(data){
@@ -65,6 +72,21 @@ function filterByKeyword(event) {
 
 $('select').change(filterByKeyword);
 
+let pageNumber = 'page-1';
+
+function pageChanger(event) {
+    event.preventDefault();
+    pageNumber = event.target.value;
+    let oldMonster = $('section').not('#photo-template');
+    let oldKeyword = $('option');
+    $(oldMonster).remove();
+    $(oldKeyword).remove();
+
+    queryPage();
+}
+
+$('.next').on('click', pageChanger);
+queryPage();
 
 // Create @ Master
 // chckout a branch... newBranch
