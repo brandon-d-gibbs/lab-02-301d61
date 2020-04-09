@@ -6,9 +6,8 @@ const keywordArray= [];
 //Ajax, stop cleaning washing the dishes and fetch me those monsters!
 $.ajax('data/page-1.json', {method: 'GET', dataType: 'JSON'})
     .then ( (data) => {
-        data.forEach( value => {
-            new Monster(value).render();
-            
+        data.forEach( (value) => {
+            new Monster(value).render();            
             if (!keywordArray.includes(value.keyword)){
                 keywordArray.push(value.keyword);
             }           
