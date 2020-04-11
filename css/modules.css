@@ -1,0 +1,50 @@
+select {
+    width: 20%;
+    height: 30px;
+    border-radius: 7px;
+    margin: 14px;
+    border: 1px solid rgb(32, 178, 170, 0.6);
+}
+
+#pageButtons {
+    display: flex;
+}
+
+button {
+    width: 40%;
+    height: 35px;
+    border-radius: 7px;
+    margin: 14px;
+    background: lightseagreen;
+    border: thin solid silver;
+    box-shadow: 2px 3px lightskyblue;
+}
+
+button:active {
+    height: 30px;
+}
+
+#photo-template {
+    display: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    background: #eee;
+    padding: 7px;
+    margin: 7px;
+    border: 1px solid rgb(32, 178, 170, 0.6);
+    border-radius: 7px;
+    box-shadow: 4px 5px rgb(32, 178, 170, 0.6);
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 21px;
+}
+
