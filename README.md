@@ -37,7 +37,23 @@ Estimate of time needed to complete: 35
 
 Start time: 1:15 pm
 
+Finish time: 1:45
+
+Actual time needed to complete: 30 //ran out of time
+
+
+
+
+********   Lab 03   ******
+Number and name of feature: Feature
+
+Estimate of time needed to complete: 2hr
+
+Start time: 10am
+
 Finish time: _____
 
 Actual time needed to complete: _____
+
+
 ********************************************************
