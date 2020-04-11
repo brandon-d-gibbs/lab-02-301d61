@@ -11,7 +11,7 @@ function queryPage(){
     $.ajax(`./data/${pageNumber}.json`, {method: 'GET', dataType: 'JSON'})
     .then ( (data) => {
         data.forEach( (value) => {
-            new Monster(value).render();            
+            new Monster(value).renderMonsters(value);            
             if (!keywordArray.includes(value.keyword)){
                 keywordArray.push(value.keyword);
             }           
@@ -33,19 +33,26 @@ function Monster(data){
 }
 
 // Render function for these rascals!
-Monster.prototype.render = function() {
-    let template = $('#photo-template').html();
+// Monster.prototype.render = function() {
+//     let template = $('#photo-template').html();
 
-    let $newSection = $('<section></section>');
-    $newSection.html(template);
-    $newSection.find('img').attr('src', this.image_url);
-    $newSection.find('h2').text(this.title);
-    $newSection.find('p').text(this.description);
-    $newSection.attr('keyword', this.keyword);
-    $newSection.attr('horns', this.horns);
+//     let $newSection = $('<section></section>');
+//     $newSection.html(template);
+//     $newSection.find('img').attr('src', this.image_url);
+//     $newSection.find('h2').text(this.title);
+//     $newSection.find('p').text(this.description);
+//     $newSection.attr('keyword', this.keyword);
+//     $newSection.attr('horns', this.horns);
 
-    $('main').append($newSection);
+//     $('main').append($newSection);
+// }
+
+Monster.prototype.renderMonsters= (data) => {
+    let $template = $('#photo-template').html();
+    let $target = $('main');
+    $target.append(Mustache.render($template, data));
 }
+
 
 // Function to populate drop down menu
 function populateDropDown() {
