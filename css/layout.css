@@ -1,39 +1,14 @@
 header {
-    text-align: center;
-    margin: 45px;
-}
-h2{
-    text-align: center;
-    margin: 14px;
-}
-
-img {
-    max-width: 250px;
-    max-height: 250px;
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
-section {
-    width: 30%;
-    height: 350px;
-    float: left;
-    background: #eee;
-    padding: 7px;
-    margin: 7px;
-    border: 1px solid #333;
-    border-radius: 7px;
-    box-shadow: 4px 5px lightgrey;
-}
-
-#photo-template {
-    display: none;
-}
-
-footer {
-    clear: both;
-    text-align: center;
-}
