@@ -4,6 +4,16 @@
     <title>The Gallery of Horns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="./css/styles.css" />
+
+    <script id="photo-template"  type="x-tmpl-mustache">
+      <section class= "photo-section" keyword="{{keyword}}">
+        <h2>{{title}}</h2>
+        <img src="{{image_url}}" alt="{{title}}">
+        <p>{{description}}</p>
+        <p><span>Type:  </span>{{keyword}}</p>
+        <p><span># of horns:  </span>{{horns}}</p>
+      </section>
+    </script>
   </head>
   <body>
     <header>
@@ -20,15 +30,7 @@
     </header>
     <main>
 
-      <script id="photo-template"  type="x-tmpl-mustache">
-        <section class= "photo-section" keyword="{{keyword}}">
-          <h2>{{title}}</h2>
-          <img src="{{image_url}}" alt="{{title}}">
-          <p>{{description}}</p>
-          <p><span>Type:  </span>{{keyword}}</p>
-          <p><span># of horns:  </span>{{horns}}</p>
-        </section>
-      </script>
+      
       
 
     </main>

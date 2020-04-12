@@ -2,8 +2,12 @@
 Gallery of Horns
 
 ### Colaborators:
+- Me
 - Kent Sheats
 - Ken Harman
+
+**
+- Peyton Cysweski came in and helped us fix a bug that was preventing our musache from appending. Many thanks to him for that!
 
 ********************************************************
 Time Estimates
@@ -45,15 +49,38 @@ Actual time needed to complete: 30 //ran out of time
 
 
 ********   Lab 03   ******
-Number and name of feature: Feature
+Number and name of feature: Feature 1 - Pagination
 
 Estimate of time needed to complete: 2hr
 
 Start time: 10am
 
-Finish time: _____
+Finish time: 12pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 2hrs
+
+
+----------------------------------
+Number and name of feature: Feature 2 - Templating
+
+Estimate of time needed to complete: 2hr
+
+Start time: 12pm
+
+Finish time: 3pm
+
+Actual time needed to complete: 2 hrs //took 1 hour + break for lunch
+
+-----------------------------------
+Number and name of feature: Feature 3 - Flexbox
+
+Estimate of time needed to complete: 1
+
+Start time: 3:15
+
+Finish time: 4pm
+
+Actual time needed to complete: 30 mins or so, mostly tinkering with making it look "prety".
 
 
 ********************************************************

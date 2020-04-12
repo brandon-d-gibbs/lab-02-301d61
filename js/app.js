@@ -2,6 +2,7 @@
 
 let monstersArray = [];
 let keywordArray= [];
+let pageNumber = 'page-1';
 
 //Ajax, stop cleaning washing the dishes and fetch me those monsters!
 function queryPage(){
@@ -32,27 +33,11 @@ function Monster(data){
     monstersArray.push(this);
 }
 
-// Render function for these rascals!
-// Monster.prototype.render = function() {
-//     let template = $('#photo-template').html();
-
-//     let $newSection = $('<section></section>');
-//     $newSection.html(template);
-//     $newSection.find('img').attr('src', this.image_url);
-//     $newSection.find('h2').text(this.title);
-//     $newSection.find('p').text(this.description);
-//     $newSection.attr('keyword', this.keyword);
-//     $newSection.attr('horns', this.horns);
-
-//     $('main').append($newSection);
-// }
-
 Monster.prototype.renderMonsters= (data) => {
     let $template = $('#photo-template').html();
     let $target = $('main');
     $target.append(Mustache.render($template, data));
 }
-
 
 // Function to populate drop down menu
 function populateDropDown() {
@@ -79,8 +64,7 @@ function filterByKeyword(event) {
 
 $('select').change(filterByKeyword);
 
-let pageNumber = 'page-1';
-
+// removes content on page and initiates load of next page
 function pageChanger(event) {
     event.preventDefault();
     pageNumber = event.target.value;
@@ -93,9 +77,6 @@ function pageChanger(event) {
 }
 
 $('.next').on('click', pageChanger);
-queryPage();
 
-// Create @ Master
-// chckout a branch... newBranch
-// ACP to newBranch on GitHub... merge to master
-// Master > working branches
+//Runs AJAX on page load
+queryPage();
